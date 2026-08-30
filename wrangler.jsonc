@@ -7,10 +7,6 @@
     {
       "pattern": "vabgames.com/",
       "zone_name": "vabgames.com"
-    },
-    {
-      "pattern": "www.vabgames.com/",
-      "zone_name": "vabgames.com"
     }
   ],
   "assets": {
