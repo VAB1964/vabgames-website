@@ -3,8 +3,17 @@
   "name": "vabgames-website-staging",
   "compatibility_date": "2026-08-30",
   "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "vabgames.com/",
+      "zone_name": "vabgames.com"
+    },
+    {
+      "pattern": "www.vabgames.com/",
+      "zone_name": "vabgames.com"
+    }
+  ],
   "assets": {
     "directory": "dist"
   }
 }
-
