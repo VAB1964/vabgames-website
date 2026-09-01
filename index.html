@@ -57,7 +57,7 @@
 
       .games-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.5rem;
       }
 
@@ -150,6 +150,51 @@
         z-index: 1;
       }
 
+
+      .icon-dominoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        background:
+          radial-gradient(circle at 50% 10%, rgba(245, 158, 11, 0.22), transparent 38%),
+          linear-gradient(155deg, #173d36, #0b201f);
+      }
+
+      .domino {
+        position: relative;
+        width: 28%;
+        max-width: 92px;
+        aspect-ratio: 1 / 2;
+        border-radius: 0.65rem;
+        border: 2px solid #d5b87c;
+        background: linear-gradient(145deg, #fff7df, #d9c394);
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.45);
+      }
+
+      .domino:first-child {
+        transform: rotate(-12deg);
+      }
+
+      .domino:last-child {
+        transform: rotate(12deg);
+      }
+
+      .domino::before {
+        content: "";
+        position: absolute;
+        left: 12%;
+        right: 12%;
+        top: 50%;
+        height: 2px;
+        background: #5b4526;
+        box-shadow:
+          12px -35px 0 3px #2e2418,
+          -12px -18px 0 3px #2e2418,
+          12px 18px 0 3px #2e2418,
+          -12px 35px 0 3px #2e2418;
+      }
+
       h2 {
         margin: 0;
         font-size: clamp(1.35rem, 3vw, 1.8rem);
@@ -221,6 +266,22 @@
             class="play-button"
             href="https://vabgames.com/cribbage/"
             aria-label="Play Cribbage Card Room"
+          >
+            <span>Play</span>
+          </a>
+        </article>
+
+        <article class="game-tile">
+          <div class="tile-icon icon-dominoes" aria-hidden="true">
+            <span class="domino"></span>
+            <span class="domino"></span>
+          </div>
+          <h2>Domino Moon &amp; Texas 42</h2>
+          <p class="tile-text">Bid, choose trump, and take tricks with friends or AI players.</p>
+          <a
+            class="play-button"
+            href="https://vabgames.com/dominoes/"
+            aria-label="Play Domino Moon and Texas 42"
           >
             <span>Play</span>
           </a>
