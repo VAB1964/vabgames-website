@@ -57,7 +57,7 @@
 
       .games-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.5rem;
       }
 
@@ -195,6 +195,8 @@
           -12px 35px 0 3px #2e2418;
       }
 
+      .icon-smash { display: grid; place-items: center; font-size: 5rem; background: #123143; }
+
       h2 {
         margin: 0;
         font-size: clamp(1.35rem, 3vw, 1.8rem);
@@ -283,6 +285,14 @@
             href="https://vabgames.com/dominoes/"
             aria-label="Play Domino Moon and Texas 42"
           >
+            <span>Play</span>
+          </a>
+        </article>
+        <article class="game-tile">
+          <div class="tile-icon icon-smash" aria-hidden="true">💰</div>
+          <h2>Smash for Cash</h2>
+          <p class="tile-text">Race for the pot, protect your cash, and outplay friends in an invite-code room.</p>
+          <a class="play-button" href="https://vabgames.com/smash/" aria-label="Play Smash for Cash">
             <span>Play</span>
           </a>
         </article>
